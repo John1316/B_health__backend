@@ -8,7 +8,7 @@ if(isset($_GET['id'])){
 }
 if(isset($_POST['user_reservation'])){
 	
-    $insert = "INSERT INTO `user_reservation` (`program_id`,`user_id`,`value`) VALUES(".$_SESSION['program_id'].",".$_SESSION['user_id']." , '1' )";
+    $insert = "INSERT INTO `user_reservation` (`program_id`,`user_id`) VALUES(".$_SESSION['program_id'].",".$_SESSION['user_id']." )";
     if(!mysqli_query($conn,$insert)){ 
         die('Error:'. mysqli_error($conn));
     } else {
@@ -26,7 +26,7 @@ if(isset($_POST['add_rate'])){
     }
 }
 if(!isset($_SESSION['username'])){
-    echo " <script> alert('please sign in to checkout'); </script>";
+    echo " <script> alert('please sign in to reserve'); </script>";
         $disable = "disabled";
     }else{
         $disable = "";

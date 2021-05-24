@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
         <!--header-->
         <header class="header">
@@ -29,7 +29,7 @@
                             <span class="icon-menu"></span>
                         </button>
                         <div class="col-lg-2 d-flex align-items-lg-center">
-                            <a href="index.html" class="header-logo"><img src="images/logo.png" alt="" class="img-fluid"></a>
+                            <a href="index.php" class="header-logo"><img src="images/logo.png" alt="" class="img-fluid"></a>
                         </div>
                         <div class="col-lg ml-auto header-nav-wrap">
                             <div class="header-nav js-header-nav">
